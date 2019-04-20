@@ -8,6 +8,12 @@ export default class App extends React.Component {
             count: 0
         };
     }
+    
+    incrementByOne() {
+        this.setState({
+            count: {this.state.count} + 1    
+      )}               
+    }
 
     render() {
         return (
