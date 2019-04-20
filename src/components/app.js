@@ -21,7 +21,7 @@ export default class App extends React.Component {
                 <div className="count">
                     Number of clicks: {this.state.count}
                 </div>
-                <IncrementButton onClick={() => props.incrementByOne()} />
+                <IncrementButton onClick={() => this.incrementByOne()} />
             </div>
         );
     }
